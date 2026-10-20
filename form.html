@@ -22,8 +22,11 @@
     </div>
     <hr>
     <h2>Форма 1: контактные данные</h2>
-    <form action="https://www.bing.com/search?" id="UserEnter1" name="UserEnter1" target="_blank">
-        <p>Для поисковика: <input type="hidden" name="q" value="search"></p>
+    <form action="https://formspree.io/f/myekqjrk"
+      method="POST"
+      id="UserEnter1"
+      name="UserEnter1">
+        
         <p>Фамилия: <input type="text" name="last_name"></p>
         <p>Имя: <input type="text" name="first_name"></p>
         <p>Группа: <input type="text" name="group"></p>
@@ -37,8 +40,11 @@
     </form>
     <hr>
     <h2>Форма 2: заказ билетов</h2>
-    <form action="https://www.bing.com/search?" id="UserEnter2" name="UserEnter2" target="_blank">
-        <input type="hidden" name="q" value="search">
+   <form action="https://formspree.io/f/myekqjrk"
+      method="POST"
+      id="UserEnter2"
+      name="UserEnter2">
+        
         <input type="hidden" name="event_id" value="concert-2026-11">
         <p>Имя заказчика: <input type="text" name="customer_name" value="Гость"></p>
         <p>Количество билетов: <input type="number" name="ticket_count" min="1" max="10" value="2"></p>
