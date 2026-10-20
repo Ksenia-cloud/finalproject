@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_JS. Считываем информацию из DOM</title>
+</head>
+<body>
+    <a id="up"></a>
+    <div>
+        <a href="index.html">Главная страница</a> |
+        <a href="info.html">Информационная страница</a> |
+        <a href="info.html#types">Виды залов (закладка)</a> |
+        <a href="test_img.html">Фото</a> |
+        <a href="table.html">Таблица</a> |
+        <a href="form.html">Формы</a> |
+        <a href="passport.html">Паспорт</a> |
+        <a href="DOM.html"><b>[ Считывание из DOM ]</b></a> |
+        <a href="task.html">Задача</a> |
+        <a href="https://www.hse.ru/" target="_blank">Внешний сайт</a> |
+        <a href="https://www.hse.ru/" target="_blank"><img src="image/ext.png" width="20" alt="Внешний сайт"></a> |
+        <a href="index.html"><img src="image/logo.png" width="20" alt="На главную"></a>
+    </div>
+    <hr>
+    <h2>DOM_JS. Считываем информацию из DOM</h2>
+    <div style="position:relative; width:378px; height:529px; background-image:url(image/pass.jfif); background-repeat:no-repeat;">
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:170px; top:294px;">ИВАНОВА</p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:152px; top:337px;">Анна</p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:182px; top:360px;">Сергеевна</p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:152px; top:377px;">Жен.</p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:232px; top:378px;">12.03.<b>2005</b></p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:192px; top:393px;">Г. МОСКВА</p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:95px; top:60px;">ГУ МВД ПО Г. МОСКВЕ</p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:32px; top:138px;">01.04.2025</p>
+        <p style="position:absolute; margin:0; font-family:monospace; font-size:13px; font-weight:bold; white-space:nowrap; left:224px; top:118px;">770-070</p>
+        <img src="image/photo.jpg" width="108" height="127" alt="Фото" style="position:absolute; left:13px; top:319px;">
+    </div>
+    <h3>Команды для консоли (F12, вкладка Console)</h3>
+    <ul>
+        <li> <code>document.getElementsByTagName('p')[0].innerText</code> — фамилия </li>
+        <li> <code>document.getElementsByTagName('p')[1].innerText</code> — имя </li>
+        <li> <code>document.getElementsByTagName('p')[4].childNodes[1].innerText</code> — год рождения </li>
+    </ul>
+    <h3>Скриншот</h3>
+    <img src="image/task.jpg" alt="Скриншот консоли" width="600">
+</body>
+</html>

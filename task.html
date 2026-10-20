@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+</head>
+<body>
+    <a id="up"></a>
+    <div>
+        <a href="index.html">Главная страница</a> |
+        <a href="info.html">Информационная страница</a> |
+        <a href="info.html#types">Виды залов (закладка)</a> |
+        <a href="test_img.html">Фото</a> |
+        <a href="table.html">Таблица</a> |
+        <a href="form.html">Формы</a> |
+        <a href="passport.html">Паспорт</a> |
+        <a href="DOM.html">Считывание из DOM</a> |
+        <a href="task.html"><b>[ Задача ]</b></a> |
+        <a href="https://www.hse.ru/" target="_blank">Внешний сайт</a> |
+        <a href="https://www.hse.ru/" target="_blank"><img src="image/ext.png" width="20" alt="Внешний сайт"></a> |
+        <a href="index.html"><img src="image/logo.png" width="20" alt="На главную"></a>
+    </div>
+    <hr>
+    <h2>Решение алгоритмической задачи</h2>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <input type="hidden" name="q" value="search">
+        <ul>
+            <li>Формулировка задачи:
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Можно ли в квадратном зале площадью S поместить круглую сцену радиусом R так, чтобы от стены до стены был проход K?</textarea></li>
+            <li>S (площадь зала): <input id="S" name="S" type="number" step="any" value="5"></li>
+            <li>R (радиус сцены): <input id="R" name="R" type="number" step="any" value="1"></li>
+            <li>K (проход): <input id="K" name="K" type="number" step="any" value="0.5"></li>
+            <li>Результат решения задачи: <input id="result" name="result" size="60" value="не определен"></li>
+            <li>Действие: <input id="verify" type="button" value="Проверить">
+                <input type="submit" value="Отправить на сервер"></li>
+        </ul>
+    </form>
+    <script src="./scripts/task.js"></script>
+</body>
+</html>
