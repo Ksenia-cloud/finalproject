@@ -1,7 +1,7 @@
 function verify() {
     const S = parseFloat(document.getElementById('S').value)
     const R = parseFloat(document.getElementById('R').value)
-    const K = parseFloat(document.getElementById('K').value)
+    const K = parseFloat(document.getElementById('abc').value)
     console.log(S, R, K)
     let result
     if (isNaN(S) || isNaN(R) || isNaN(K) || S <= 0 || R <= 0 || K < 0) {
